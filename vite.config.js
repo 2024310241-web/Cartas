@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/cartas/', // 👈 MUY IMPORTANTE
+  base: '/Cartas/', // 👈 nombre EXACTO del repo
+  build: {
+    outDir: 'docs'
+  }
 })
